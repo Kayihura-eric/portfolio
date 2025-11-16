@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ background-image: url('../images/background.jpg');
+ background-position: center;
+ background-size: cover;
+ min-height: 100vh;
+ color: white;
+ font-family: Arial,sans-serif;
+ margin: 0;
+ padding: 0;
+}
+header{
+    text-align: center;
+    padding: 1em 0;
+}
+main{
+    padding: 1em 0;
+}
+footer{
+    text-align: center;
+    margin: 3em 0;
+}
+.container{
+    width: 100%; 
+}
+.container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container{
+    position: absolute;
+    bottom: 2px;
+}
+.logo{
+    margin-left: 2em;
+}
+.logo-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(44, 108, 173);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 2em 0;
+}
+nav ul li{
+    padding: 0 1em;
+}
+nav ul li a{
+    color: white;
+    text-transform: capitalize;
+}
+.main-content{
+    display: block;
+}
+.contents{
+    margin: 0 1em;
+}
+.content-title{
+    color: rgb(44, 108, 173);
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5em 0;
+    font-weight: 5000;
+    font-size: 1.5rem;
+}
+.content-text{
+    text-transform: capitalize;
+    line-height: normal;
+    font-weight: 400;
+    word-spacing: 4px;
+}
+.hire-button-me{
+    text-align: center;
+    margin: 2em 0;
+}
+.hire-btn{
+    background-color: rgb(44, 108, 173);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.hire-btn:hover,
+.hire-btn:focus{
+   background-color: black;
+   transform: translateY(-5px);
+}
+.hire-btn a{
+    color: white;
+    text-decoration: none;
+}
+.footer-text{
+  padding: 1em 0;   
+}
+/* nav{
+    margin-right: 2em;
+} */
+@media (min-width:601px){
+    
+    .container-header{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        margin-left: 2em;
+    }
+    nav{
+        margin-right: 3em;
+    }
+    nav ul{
+        padding: 0;
+    }
+    .main-content{
+        margin-top: 3em;
+        
+    }
+    .contents{
+        width: 60%;
+        height:200px;
+    }
+    .hire-button-me{
+        text-align: left;
+        margin: 3em;
+    }
+    footer{
+        text-align: left;
+    }
+    .footer-text{
+        padding-left: 2em;
+    }
+}
